@@ -20,5 +20,3 @@
 include:
   - board: seeeduino_xiao_ble
     shield: Deskiny_left
-  - board: seeeduino_xiao_ble
-    shield: Deskiny_right
