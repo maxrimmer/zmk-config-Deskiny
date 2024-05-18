@@ -15,6 +15,6 @@ keymap {
                          &kp RGUI   &kp RALT    &kp SPACE   &kp ENTER
         >;
 
+        };
     };
-};
 };

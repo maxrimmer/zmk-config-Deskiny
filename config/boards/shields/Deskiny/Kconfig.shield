@@ -1,2 +1,2 @@
-config SHIELD_DESKINY_LEFT
+config ZMK_KEYBOARD_DESKINY
     def_bool $(shields_list_contains,Deskiny_left)
