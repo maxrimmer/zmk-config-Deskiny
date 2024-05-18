@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 /{
 keymap {
-    compatible = "zmk,keynap";
+    compatible = "zmk,keymap";
     //letterkeys
     default {
         label = "colemak-dh";
