@@ -1,12 +1,12 @@
 if SHIELD_DESKINY_LEFT
 
-config SHIELD_DESKINY_NAME
+config ZMK_KEYBOARD_NAME
     default "DESKINY"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif 
+endif #LEFT
 
 if SHIELD_DESKINY_LEFT || SHIELD_DESKINY_RIGHT
 
