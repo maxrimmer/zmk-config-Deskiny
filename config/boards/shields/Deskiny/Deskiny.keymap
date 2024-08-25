@@ -8,10 +8,10 @@
 
         ALPHA {
             bindings = <
-&kp LSHFT         &kp Q  &kp W  &kp F           &kp P         &kp B                                       &kp J            &kp L      &kp U      &kp Y    &kp LC(LA(Z))  &kp LC(LA(W))
-&kp LEFT_CONTROL  &kp A  &kp R  &kp S           &kp T         &kp G                                       &kp M            &kp N      &kp E      &kp I    &kp O          &kp LC(LA(L))
-                  &kp Z  &kp X  &kp C           &kp D         &kp V                                       &kp K            &kp H      &kp COMMA  &kp DOT  &kp MINUS
-                                &lt 4 LEFT_GUI  &lt 1 DELETE  &mt LEFT_WIN SPACE  &lt 3 ENTER  &lt 3 ESC  &lt 2 BACKSPACE  &lt 1 TAB  &mo 4
+&kp LSHFT         &kp Q  &kp W  &kp F           &kp P         &kp B                                              &kp J            &kp L      &kp U      &kp Y    &kp LC(LA(Z))  &kp LC(LA(W))
+&kp LEFT_CONTROL  &kp A  &kp R  &kp S           &kp T         &kp G                                              &kp M            &kp N      &kp E      &kp I    &kp O          &kp LC(LA(L))
+                  &kp Z  &kp X  &kp C           &kp D         &kp V                                              &kp K            &kp H      &kp COMMA  &kp DOT  &kp MINUS
+                                &lt 4 LEFT_GUI  &lt 1 DELETE  &mt LEFT_WIN SPACE  &mt LEFT_ALT ENTER  &lt 3 ESC  &lt 2 BACKSPACE  &lt 1 TAB  &mo 4
             >;
         };
 
