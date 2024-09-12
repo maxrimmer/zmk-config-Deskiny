@@ -8,10 +8,10 @@
 
         ALPHA {
             bindings = <
-&kp LSHFT         &kp Q  &kp W  &kp E           &kp R         &kp T                                     &kp Y            &kp U        &kp I      &kp O    &kp P      &bt BT_CLR_ALL
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D           &kp F         &kp G                                     &kp H            &kp J        &kp K      &kp L    &kp O      &bt BT_DISC 0
-                  &kp Z  &kp X  &kp C           &kp V         &kp B                                     &kp N            &kp M        &kp COMMA  &kp DOT  &kp MINUS
-                                &lt 4 LEFT_GUI  &lt 1 DELETE  &mt LEFT_WIN SPACE  &kp SPACE  &lt 3 ESC  &lt 2 BACKSPACE  &bootloader  &mo 4
+&kp LSHFT         &kp Q  &kp W  &kp E           &kp R         &kp T                                     &kp Y            &kp U   &kp I        &kp O    &kp P      &bt BT_CLR_ALL
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D           &kp F         &kp G                                     &kp H            &kp J   &kp K        &kp L    &kp O      &bt BT_DISC 0
+                  &kp Z  &kp X  &kp C           &kp V         &kp B                                     &kp N            &kp M   &kp COMMA    &kp DOT  &kp MINUS
+                                &lt 4 LEFT_GUI  &lt 1 DELETE  &mt LEFT_WIN SPACE  &kp SPACE  &lt 3 ESC  &lt 2 BACKSPACE  &tog 0  &bootloader
             >;
         };
 
