@@ -3,24 +3,33 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        move_to_left_screen: move_to_left_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT>;
+            label = "MOVE_TO_LEFT_SCREEN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         ALPHA {
             bindings = <
 &kp LSHFT         &kp Q  &kp W  &kp E           &kp R         &kp T                                        &kp Y            &kp U             &kp I        &kp O    &kp P      &bt BT_CLR_ALL
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D           &kp F         &kp G                                        &kp H            &kp J             &kp K        &kp L    &kp O      &bt BT_DISC 0
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D           &kp F         &kp G                                        &kp H            &kp J             &kp K        &kp L    &kp SQT    &kp RETURN
                   &kp Z  &kp X  &kp C           &kp V         &kp B                                        &kp N            &kp M             &kp COMMA    &kp DOT  &kp MINUS
-                                &lt 4 LEFT_GUI  &lt 1 DELETE  &mt LEFT_WIN SPACE  &kp LEFT_ALT  &lt 3 ESC  &lt 2 BACKSPACE  &kp LEFT_COMMAND  &bootloader
+                                &bootloader     &lt 1 DELETE  &mt LEFT_WIN SPACE  &kp LEFT_ALT  &lt 3 ESC  &lt 2 BACKSPACE  &kp LEFT_COMMAND  &bootloader
             >;
         };
 
         NAV {
             bindings = <
-&kp LSHFT  &none  &none      &kp LC(LS(V))  &kp LC(LS(C))  &none                   &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &none  &none
-&kp LCTRL  &none  &kp LC(X)  &kp LC(A)      &kp LC(C)      &none                   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none  &none
-           &none  &none      &none          &none          &none                   &none     &none          &none      &none      &none
-                             &trans         &trans         &trans  &trans  &trans  &trans    &trans         &trans
+&kp LSHFT  &none  &none      &kp LC(LS(V))  &kp LC(LS(C))  &none                   &kp HOME              &kp PAGE_DOWN  &kp PG_UP  &kp END    &none  &none
+&kp LCTRL  &none  &kp LC(X)  &kp LC(A)      &kp LC(C)      &none                   &kp LEFT              &kp DOWN       &kp UP     &kp RIGHT  &none  &none
+           &none  &none      &none          &none          &none                   &move_to_left_screen  &none          &none      &none      &none
+                             &trans         &trans         &trans  &trans  &trans  &trans                &trans         &trans
             >;
         };
 
